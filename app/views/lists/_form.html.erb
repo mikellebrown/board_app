@@ -1,0 +1,11 @@
+<%= form_with(model: @list, local: true, class: "ui form") do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Name" %>
+  </div>
+   <div class="field">
+    <%= f.label :priority %>
+    <%= f.text_field :priority, required: true, placeholder: "Priority" %>
+  </div>
+   <%= f.submit class: "ui blue button" %>
+<% end %>

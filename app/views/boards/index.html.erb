@@ -1,0 +1,19 @@
+<head>
+    <meta charset='UTF-8'/>
+     </head>
+      <body>
+        <h1>Chores Board<h/1>
+        </body>
+<br />
+<%= link_to "New Board", new_board_path(@board), class: "ui orange button" %>
+<br />
+<br />
+
+
+
+<% @boards.each do |board| %>
+  <div>
+    <h3><%= link_to board.name, board %></h3>
+  </div>
+
+<% end %>

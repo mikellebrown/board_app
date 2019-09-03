@@ -1,0 +1,19 @@
+<head>
+    <meta charset='UTF-8'/>
+     </head>
+      <body>
+        <h1>List<h/1>
+        </body>
+<br />
+<br />
+<br />
+
+
+
+<% @lists.each do |list| %>
+  <div>
+    <h3><%= link_to list.name, list %></h3>
+  </div>
+ 
+
+<% end %>

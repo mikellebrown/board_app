@@ -1,0 +1,16 @@
+<div class="ui centered card">
+  <div class="content">
+    <p class="header">
+      <%= @board.name %> 
+    </p>
+    
+  </div>
+  <div class="extra content">
+    <%= link_to 'Edit', edit_board_path(@board), class: "ui orange button" %> 
+    <%= link_to 'Back', boards_path, class: "ui teal button" %>
+     <%= link_to "Delete", @board, method: :delete, class: "ui red button" %>
+    <%= link_to 'Add List', new_board_list_path(@board), class: "ui blue button" %>
+   
+  </div>
+   
+

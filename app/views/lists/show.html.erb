@@ -1,0 +1,18 @@
+<div class="ui centered card">
+  <div class="content">
+    <p class="header">
+      <%= @list.name %> 
+    </p>
+  </div>
+    <div class="extra content">
+    <%= link_to 'Edit List', edit_board_list_path(:board_id), class: "ui orange button" %> 
+    <%= link_to 'Back', board_lists_path(:board_id), class: "ui teal button" %>
+     <%= link_to "Delete", board_lists_path(:board_id), method: :delete, class: "ui red button" %>
+    <%= link_to 'Add List', new_board_list_path(:board_id), class: "ui blue button" %>
+     <%= link_to 'Add Task', new_list_task_path(:task_id), class: "ui purple button" %>
+
+     
+   
+  </div>
+
+
